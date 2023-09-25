@@ -1,13 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
+@font-face {
+  font-family: muli;
+  src: url(NotoKufiArabic-Regular.ttf);
+}
+body{
+  font-family: 'muli';
+  
+}
 /* Reseting */
-* {
+/** {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+*/
 body{
     min-height: 100vh;
     display: flex;
@@ -21,8 +27,8 @@ body{
 
 .container .box{
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 500px;
     margin: 20px;
     transform-style: preserve-3d;
     perspective: 1000px;
@@ -37,6 +43,7 @@ body{
     height: 100%;
     transform-style: preserve-3d;
     transition: 0.9s ease;
+
 }
 
 
@@ -50,13 +57,22 @@ body{
     transform-style: preserve-3d;
 }
 
-.container .box .body .imgContainer img{
+.container .box .body .imgContainer .img{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+/*    object-fit: cover;*/
+    background: #000;
+    border-radius: 25px;
+}
+.container .box .body .imgContainer .gh {
+       position: absolute;
+    top: 20%;
+    left: 14%;
+    width: 72%;
+    height: 60%;
 }
 
 .container .box .body .content{
@@ -65,7 +81,8 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #333;
+    background: #000;
+    border-radius: 25px;
     backface-visibility: hidden;
     transform-style: preserve-3d;
     transform: rotateY(180deg);
