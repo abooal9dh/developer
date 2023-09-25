@@ -95,12 +95,23 @@ body{
 }
 
 .container .box .body .content div{
+    text-align: center;
     transform-style: preserve-3d;
-    padding: 20px;
-    background: linear-gradient(45deg, #FE0061,#FFEB3B);
-    transform: translateZ(100px);
+    position: absolute;
+    top: 72%;
+    margin-left: 27px ;
+    margin-right: 27px ;
+/*    background: linear-gradient(45deg, #FE0061,#FFEB3B);*/
+/*    transform: translateZ(100px);*/
 }
 
 .container .box .body .content div h3{
     letter-spacing: 1px;
+}
+.container .box .body .content img{
+    position: absolute;
+    top: 9%;
+    left: 14%;
+    width: 72%;
+    height: 60%;
 }
