@@ -1,1 +1,121 @@
+============== delete & replace with =============
 $trimmed = str_replace($search or 'string', 'replace with', $variable) ;
+
+=========================================
+
+
+============== remove 00000 =============
+$var = (int)$var;
+$var = ltrim($var, '0');
+$var = strval(intval($var));
+===================================
+============== ad 00000 =============
+$number = sprintf("%07d", $input)
+
+$input = 1;
+$number = str_pad($input, 7, "0", STR_PAD_LEFT);
+===================================================
+======================== substr =========================
+substr($SUM,0,1)
+from firest value (0) one step (1)
+====================================================
+=========================== if is empty =================
+!empty($intLat)
+======================================================
+======================== session_start() PROP SOVLE ===========
+<?php
+session_start();
+require('000000004.php');
+not like this
+	<?php
+		session_start();
+require('000000004.php');
+=========================================================
+============================= CHECK IF False ====================
+$gdms=$msc->prepare ("SELECT * FROM n4 WHERE passQr = '$qrc' ");
+	$gdms -> execute();
+	$ddms = $gdms-> get_result();
+	$cdta=$ddms->fetch_assoc();
+	if ($cdta == false ) {}
+=============================================================
+==========UPdate==============================================
+$gdms=$msc->prepare ("INSERT INTO n8 (teamNAM,teamPSW,teamIMG,teamEDT) VALUES ('$teamNAM','$teamPSW','$teamIMG','$number')");
+==========================================================
+====================count========================================
+$gdms=$msc->prepare ("SELECT count(*) AS count FROM n1 ");
+			$gdms -> execute();
+			$ddms = $gdms-> get_result();
+			$cdta=$ddms->fetch_assoc();
+			$count = $cdta['count'];
+=================================================================
+==========================if is anumber ===================================
+is_numeric($number) === if $number is a number
+==============================================================
+============================== add 0000 to number =======================================
+str_pad($cdta["number"], 9, '0', STR_PAD_LEFT) ++++ add 0 to number LEFT or RIGHT or BOTH
+=====================================================================
+================================= null ========================
+$null !== null and $health4 === '0' || 0
+$null == null || null or 0
+=======================================================
+========================  Header ==================
+header('Location:000000001.php');
+echo("<script>location.href = '000000001.php';</script>");
+==========================================
+=========================== strlen ====================
+$SD = echo strlen("Hello");
+ result // 5
+=============================================================
+========================== ORDER By ===========================
+ORDER BY number desc or asc +++++ SORTING
+LIMIT 9 ++++ LIMIT Result count [9] +++
+=================================================================
+$calcTax = $diamond - $tax;
+			$ums =$msc->prepare("UPDATE n1 SET diamond='$calcTax' WHERE number='$number'");
+			$ums -> execute();
+			$iims=$msc->prepare("INSERT INTO n1 (id,domain) VALUES ('$idEE','$domainEE')");
+			$iims -> execute();
+			$gdms=$msc->prepare ("SELECT number FROM n1 WHERE number = (SELECT MAX(number) FROM n1);");
+			$gdms -> execute();
+			$ddms = $gdms-> get_result();
+			$cdta=$ddms->fetch_assoc();
+			$newUSER = $cdta['number'];
+			echo "<br><center><span style='color:#fff; font-size:90px;'>$newUSER ✔️<span/></center>";
+			session_destroy() ;
+++
+
+
+	UPDATE `num` SET `diamond` = '6565' WHERE `num`.`number` = 3 AND `num`.`id` = '44e62f72fb99aeb0bce96dac6f9b8955';
+	$iims=$msc->prepare("INSERT INTO num(id) VALUES ('$id')");
+	$iims -> execute();
+	$ums =$msc->prepare("UPDATE num SET id='$id' WHERE number=9");
+	$ums -> execute();
+	$dfms =$msc->prepare("DELETE FROM n1 WHERE number='$id'");
+	$dfms -> execute();
+	$gdms=$msc->prepare ("SELECT * FROM n1");
+	$gdms -> execute();
+	$ddms = $gdms-> get_result();
+	while ($cdta=$ddms->fetch_assoc()) 
+	{
+	echo "<table><tr><td>".$cdta["id"]."<td/><td>".$cdta["number"]."<td/><tr/><table/>";
+	 }
+============================= time zone ===========================================
+							date_default_timezone_set('Africa/Khartoum');
+							$Date = date ('d|m|Y h:i:s');
+							echo "<div width='333px'>"."<p style='color:#fff; border-style: dotted; '>".$Date."</p>"."<div/>";
+===========================================================================================
+[CTRL+? diable CODE]
+echo "abooal9dh"; /* in pure php don't cloes code with ?> */
+echo "abooal9dh \"und3rcover\" 999999999 "; // [ \ ] this mark to escape character after it
+$abooal9dh = "jk";
+$abooal9dh .= "jh"; // = jkjh use [ . ] to print html code or to variables concatenation 
+echo gettype(abooal9dh); // String
+var_dump(abooal9dh); // String (2) "jk"
+echo $fristname . <br>; //variables
+define ("FRIST_NAME", "abooal9dh", TRUE); . <br>; // Constant [ use it always ]
+const FRIST_NAME = "abooal9dh"; . <br>; // Constant [ not for use ]
+echo PHP_INT_MAX; // = 2147483647
+echo __FILE__; // file path+folder name.type
+echo __DIR__; // file path
+echo __LINE__; // = 13 [ line number ]
+
