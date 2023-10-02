@@ -1,0 +1,76 @@
+maxlength="90" onkeypress="return isNumberKey(event)" // line length
+
+<iframe class="iframe001" src="000000001.php" style="border:none;"></iframe>
+
+<!DOCTYPE html>
+
+<!--[Tab] [Shift+Tab] Organize CODE
+CTRL+Ù
+ÇíÞÇÝ ÓØÑ ÇáßæÏ ãä ÇáÚãá Ýí ÇáÓÈáÇíã áÇí áÛå
+CTRL+W & CTRL+SHIFT+T 
+ÚßÓ ÈÚÖ
+-->
+<!-- iFrame-->
+<p>An iframe with default borders:</p>
+<iframe src="/default.asp" width="100%" height="300">
+</iframe>
+
+<p>An iframe with a thin black border:</p>
+<iframe src="/default.asp" width="100%" height="300" style="border:1px solid black;">
+</iframe>
+
+<p>An iframe with no borders:</p>
+<iframe src="/default.asp" width="100%" height="300" style="border:none;">
+</iframe>
+<!-- iFrame-->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="description in google search">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../up">
+	<link rel="JavaSecript" type="text/javascript" href="../up">
+	<style type="text/css">.class{} #id{}</style>
+	<script type="text/javascript">if JavaSecript but it here <body> does not appear</script>
+</head>
+<body>
+	<iframe name="" src="" width="" height="" scrolling="auto"></iframe>
+	<h1>Strong SEO</h1>
+	H<sub>2</sub>O<sup>4</sup>
+	<p>Paragraph</p>
+	<br> <!--brake line-->
+	<span>use it for css id or calss for style word or other inline display</span>
+	<div class="">use it for css id or calss for style any tag or other block display</div>
+	<img src="../up" title="bobup text" alt="alternate text" width="" height="">
+	<ul style="font-size: 30px; color: red">
+		<li>unordered list</li>
+		<li>unordered list</li>
+	</ul>
+	<ol type="A or I" start="3" reversed="" >
+		<li>ordered list</li>
+		<li>ordered list</li>
+	</ol>
+	<dl>
+		<dt>title</dt>
+		<dd>ordered list</dd>
+		<dd>ordered list</dd>
+	</dl>
+	<a id="#9" href="" target="_blank _self">img</a>
+	<!-- id you can replaced with link-->
+	<table>
+		<caption></caption>
+		<tr>
+			<td colspan="2" rowspan="2"></td>
+			<td></td>
+		</tr>
+	</table>
+	<form name="register" action="" method="post or get">
+	<!--Any <input> need <label>-->
+	<label>User Name</label>
+	<input type="text,password,checkbox,button,reset,file,image or submit" name="" value="singup" placeholder="hint " maxlength="10"> <!--[submit] for php or send data to page or database [Button] for javascript [file] can't change by value [image] same as [submit] it get X,Y direction in image-->	
+	<input type="radio" name="one for all radio">
+	</form>
+	&nbsp; &lt; &gt; &amp; &pound; &cent; &yen; &euro; &copy; &reg; 
+	<script>if JavaSecript but it here <body> appear</script>
+</body>
+</html>
