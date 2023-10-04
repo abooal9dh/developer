@@ -21,6 +21,9 @@ ini_set('display_startup_errors', TRUE);
 </head>
 <body style="background-color: #1E1E1E; background-image: url('img/bg-noise.png'); overflow-x: hidden;">
   <a href="app.php"><img dir="rtl" style="max-width: 72%; display: block;  margin-left: auto; margin-right: auto;" src="img/header.png"></a>
+  <?php
+  include ('nav.php');
+  ?>
   <form enctype="multipart/form-data" method="POST" action="" class="droid-arabic-kufi row g-3 text-white px-3" dir="rtl"  >
     <div class="col-md-4">
       <label  dir="rtl" class="form-label">اسم المستخدم</label>

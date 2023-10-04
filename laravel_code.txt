@@ -1,3 +1,11 @@
 ================== DATE ========================
  {{date('d-m-Y H:i:s', strtotime($auction->dateOfStarting))}}
 ===============================================
+================== AFTER 7 Days ==================
+protected function schedule(Schedule $schedule)
+    {
+        $schedule->call(function () {
+            Test::where('updated_at', '<', Carbon::now()->subDays(7))->delete();
+        })->weekly();
+    }
+================================================

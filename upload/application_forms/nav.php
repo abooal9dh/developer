@@ -5,6 +5,10 @@
                 </form>
                 <a class="btn btn-outline-warning" href="app.php">تقديم طلب</a>
                 <a class="btn btn-outline-warning" href="cp.php">لوحة التحكم</a>
+                <a class="btn btn-outline-warning" href="cp.php">لماذا تختارنا</a>
+                <a class="btn btn-outline-warning" href="cp.php">المسؤلية الإجتماعية</a>
+                <a class="btn btn-outline-warning" href="cp.php">خدمات المكتب</a>
+                <a class="btn btn-outline-warning" href="cp.php">الرئيسية</a>
                 </div>
 <br>
 '

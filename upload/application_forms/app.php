@@ -15,11 +15,11 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <a href="app.php"><img dir="rtl" style="max-width: 72%; display: block;  margin-left: auto; margin-right: auto;" src="img/header.png"></a>
-    <?php
-    if ($user == "panorama" && $pass == "panorama" ) {
+//    <?php
+  //  if ($user == "panorama" && $pass == "panorama" ) {
       include ('nav.php');
-      }
-    ?>
+    //   }
+    // ?>
   <body style="background-color: #1E1E1E; background-image: url('img/bg-noise.png'); overflow-x: hidden;">
   <form enctype="multipart/form-data" method="POST" action="app.php" class="droid-arabic-kufi row g-3 text-white px-3" dir="rtl"  >
     <div class="col-md-4">
