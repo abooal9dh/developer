@@ -10,20 +10,15 @@ ini_set('display_startup_errors', TRUE);
 ?>
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>طلبات المكتب</title>
-  <link rel="icon" type="image/x-icon" href="img/icon.jpeg">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+    <?php
+        include ('header.php');
+      ?>
 <body style="background-color: #1E1E1E; background-image: url('img/bg-noise.png'); overflow-x: hidden;">
-  <a href="app.php"><img dir="rtl" style="max-width: 72%; display: block;  margin-left: auto; margin-right: auto;" src="img/header.png"></a>
-  <?php
-  include ('nav.php');
-  ?>
+  <a href="app.php"><img dir="rtl" style="max-width: 100%; display: block;padding-left:13px ;padding-right: 13px  ;  margin-left: auto; margin-right: auto; margin-top: 50px; margin-bottom: 50px;" src="img/header.png"></a>
+     <?php
+    include ('nav.php');
+    include ('slider.html');
+    ?>
   <form enctype="multipart/form-data" method="POST" action="" class="droid-arabic-kufi row g-3 text-white px-3" dir="rtl"  >
     <div class="col-md-4">
       <label  dir="rtl" class="form-label">اسم المستخدم</label>

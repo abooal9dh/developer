@@ -5,22 +5,17 @@
   ?>
   <!DOCTYPE html>
   <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>طلبات المكتب</title>
-    <link rel="icon" type="image/x-icon" href="img/icon.jpeg">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <a href="app.php"><img dir="rtl" style="max-width: 72%; display: block;  margin-left: auto; margin-right: auto;" src="img/header.png"></a>
-//    <?php
-  //  if ($user == "panorama" && $pass == "panorama" ) {
-      include ('nav.php');
-    //   }
-    // ?>
+    <?php
+        include ('header.php');
+      ?>
   <body style="background-color: #1E1E1E; background-image: url('img/bg-noise.png'); overflow-x: hidden;">
+    <a href="app.php"><img dir="rtl" style="max-width: 100%; display: block; padding-left:13px ;padding-right: 13px  ;  margin-left: auto; margin-right: auto; margin-top: 50px; margin-bottom: 50px;" src="img/header.png"></a>
+    <?php
+        include ('nav.php');
+      ?>
+      <?php
+        include ('slider.html');
+      ?>
   <form enctype="multipart/form-data" method="POST" action="app.php" class="droid-arabic-kufi row g-3 text-white px-3" dir="rtl"  >
     <div class="col-md-4">
       <label  dir="rtl" class="form-label">الأسم </label>
@@ -71,16 +66,16 @@
             $ift = strtolower(pathinfo($_FILES["img_app"]["name"],PATHINFO_EXTENSION));
             if($ift != "jpg" && $ift != "png" && $ift != "jpeg"
               && $ift != "gif" && $ift != "pdf") {
-                echo '
+                
+              echo '
               <br><center>
-<div class="col-md-4 text-center px-3 alert alert-danger" role="alert">
+<div class="col-md-5 mx-3  text-center px-3 alert alert-danger droid-arabic-kufi" role="alert" id="fone">
               ناسف لا يمكنك رفع هذا النوع من الملفات
 </div>
 </center>
 
-              '
-              ;
-                $uploadOk = 0;
+     <script>location.href = "/app.php#fone";</script>';
+              $uploadOk = 0;
               }
             else {
               $temp = explode(".", $_FILES["img_app"]["name"]);
@@ -91,11 +86,12 @@
               $iims=$msc->prepare("INSERT INTO `app_tab` (`name_app`, `id_app`, `ph_app`, `email_app`, `sum_app`, `order_app`, `img_app`) VALUES ('$name_app', '$id_app', '$ph_app', '$email_app', '$sum_app', '$order_app', '$img_app') ");
               $iims -> execute();
             echo '
-<br><center>
-<div class="col-md-5 text-center px-3  alert alert-success" role="alert">
+<center>
+<div class="col-md-5 mx-3 text-center px-3  alert alert-success droid-arabic-kufi " role="alert" id="done">
 تم تقديم طلبك بنجاح في إنتظار ان تتم مراجعتة و التواصل معك .. شكرا
 </div>
 </center>
+<script>location.href = "/app.php#done";</script>
             ';
             }
 
