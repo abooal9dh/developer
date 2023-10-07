@@ -20,7 +20,6 @@ require ('connect.php');
    </script>
   </head>
   <body style="background-color: #1E1E1E; background-image: url('img/bg-noise.png'); overflow-x: hidden;">
-    <a href="app.php"><img dir="rtl" style="max-width: 72%; display: block;  margin-left: auto; margin-right: auto;" src="img/header.png"></a>
     <?php
     if ($_SESSION['myUser'] == "panorama" && $_SESSION['myPass'] == "panorama") {
       include ('nav.php');

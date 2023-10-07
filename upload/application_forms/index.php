@@ -9,7 +9,6 @@
   include ('header.php');
   ?>
   <body style="background-color: #1E1E1E; background-image: url('img/bg-noise.png'); overflow-x: hidden;">
-    <a href="app.php"><img dir="rtl" style="max-width: 100%; display: block; padding-left:13px ;padding-right: 13px  ;  margin-left: auto; margin-right: auto; margin-top: 50px; margin-bottom: 50px;" src="img/header.png"></a>
     <?php
     include ('nav.php');
     include ('slider.html');
