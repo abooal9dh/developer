@@ -8,22 +8,19 @@ require ('connect.php');
   <!DOCTYPE html>
   <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>طلبات المكتب</title>
-    <link rel="icon" type="image/x-icon" href="img/icon.jpeg">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <?php
+ include ('header.php') ;?>
     <script>
     function myFunction() {  alert("!هل تريد حذف هذه الدعوه حقا ؟؟");}
    </script>
   </head>
   <body style="background-color: #1E1E1E; background-image: url('img/bg-noise.png'); overflow-x: hidden;">
     <?php
+
     if ($_SESSION['myUser'] == "panorama" && $_SESSION['myPass'] == "panorama") {
       include ('nav.php');
       }
+    include ('slider.html');
     if (isset($_POST['exit'])) {
             session_destroy();
             echo("<script>location.href = 'log.php';</script>");
