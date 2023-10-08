@@ -12,13 +12,13 @@
       <span class="navbar-toggler-icon btn-outline-warning " style="width:45px; height: 45px; border-radius:3px; border:solid #FFC107 ;background-color:#FFC107 !important;"></span>
     </button>
     <div class="collapse navbar-collapse text-left" id="navbarNav">
-                <a class="btn btn-outline-warning mx-1" href="cp.php" style="font-size: 23px;" >لوحة التحكم</a>
-                <br>
                 <a class="btn btn-outline-warning mx-1" href="why.php" style="font-size: 23px;">لماذا تختارنا</a>
                 <br>
                 <a class="btn btn-outline-warning mx-1" href="cp.php" style="font-size: 23px;">المسؤلية الإجتماعية</a>
                 <br>
                 <a class="btn btn-outline-warning mx-1" href="app.php" style="font-size: 23px;">خدمات المكتب</a>
+                <br>
+                <a class="btn btn-outline-warning mx-1" href="cp.php" style="font-size: 23px;" >لوحة التحكم</a>
                 <br>
                 <button class="btn btn-outline-warning mx-1" type="submit" name="exit" style="font-size: 23px;">خروج</button>
     </div>
