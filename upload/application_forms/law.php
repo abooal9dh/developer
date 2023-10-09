@@ -23,8 +23,7 @@
             <br>
             <h5 class="btn btn-warning" style="font-size: 27px;">عبدالرحمن بن محمد الجمعه</h5>
             <p class="card-text text-warning" style="font-size: 23px;">
-مستشار قانوني
-
+محامي
           </p>
           </div>
         </div>

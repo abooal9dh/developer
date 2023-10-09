@@ -165,6 +165,10 @@
 وتشمل خدماتنا ما على
       
             </p>
+            <h5 class="btn btn-warning" style="font-size: 27px;">القضايا التجارية</h5>
+            <h5 class="btn btn-warning" style="font-size: 27px;">القضايا الإدارية</h5>
+            <h5 class="btn btn-warning" style="font-size: 27px;">المحاكم العامة</h5>
+            <h5 class="btn btn-warning" style="font-size: 27px;">المنازعات التأمينية</h5>
             <h5 class="btn btn-warning" style="font-size: 27px;">إدارة الصناديق والعقارات</h5>
             <h5 class="btn btn-warning" style="font-size: 27px;">الشركات العائلية</h5>
             <h5 class="btn btn-warning" style="font-size: 27px;">النزاعات العائلية</h5>
