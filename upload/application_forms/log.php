@@ -19,18 +19,16 @@ ini_set('display_startup_errors', TRUE);
     include ('nav.php');
     include ('slider.html');
     ?>
-  <form enctype="multipart/form-data" method="POST" action="" class="droid-arabic-kufi row g-3 text-white px-3" dir="rtl"  >
-    <div class="col-md-4">
-      <label  dir="rtl" class="form-label">اسم المستخدم</label>
-      <input name="user" type="text" dir="rtl" class="form-control"  max= "9" value="" required>
+  <form enctype="multipart/form-data" method="POST" action="" class="d-flex justify-content-center text-center droid-arabic-kufi mx-4 py-6 row p-4 text-warning g-3 text-white px-3" dir="rtl"  >
+    <div class="col-md-8">
+      <input name="user" type="text" dir="rtl" placeholder="اسم المستخدم" class="form-control"  max= "9" value="" required>
     </div>
-    <div class="col-md-3" dir="rtl" >
-      <label  dir="rtl" class="form-label">كلمة المرور</label>
-      <input name="pass" type="password" max="9" dir="rtl" class="form-control"  value="" required>
+    <div class="col-md-8" dir="rtl" >
+      <input name="pass" type="password" max="9" dir="rtl" placeholder="كلمة المرور" class="form-control"  value="" required>
     </div>
   </div>
-  <div class="col-12">
-    <button class="btn btn-warning" type="submit" name="login">دخول</button>
+  <div>
+    <button class="btn btn-warning my-2" type="submit" name="login">دخول</button>
   </div>
 </form>
 <?php
