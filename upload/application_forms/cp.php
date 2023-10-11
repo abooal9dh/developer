@@ -95,5 +95,8 @@ for ($i=1; $i<=$ro; $i++) {  // print links for all pages
           ?>
           </div>
 </center>
+<?php
+include('footer.php')
+?>
 </body>
 </html>
