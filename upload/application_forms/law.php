@@ -18,7 +18,7 @@
    <div class="row d-flex justify-content-center" dir="rtl">   
         <div class="card text-center my-4  col-md-4" style="background-color:rgba(0, 0, 0, 0.0); ">
           <div class="card-body">
-            <img class="card-img-top" src="img/law_01.jpeg" height="450" style="border: solid #FFC107;">
+            <img class="card-img-top" src="img/law_01.jpeg" height="600" style="border: solid #FFC107;">
             <br>
             <br>
             <h5 class="btn btn-warning" style="font-size: 27px;">عبدالرحمن بن محمد الجمعه</h5>
@@ -30,7 +30,7 @@
           
         <div class="card text-center my-4  col-md-4" style="background-color:rgba(0, 0, 0, 0.0); ">
           <div class="card-body">
-            <img class="card-img-top" src="img/law_02.jpeg" height="450" style="border: solid #FFC107;">
+            <img class="card-img-top" src="img/law_02.jpeg" height="600" style="border: solid #FFC107;">
             <br>
             <br>
             <h5 class="btn btn-warning" style="font-size: 27px;"> المثنى الحميد</h5>
@@ -41,7 +41,7 @@
         </div>
          <div class="card text-center my-4  col-md-4" style="background-color:rgba(0, 0, 0, 0.0); ">
           <div class="card-body ">
-            <img class="card-img-top" src="img/law_03.jpeg" height="450" style="border: solid #FFC107;">
+            <img class="card-img-top" src="img/law_03.jpeg" height="600" style="border: solid #FFC107;">
             <br>
             <br>
             <h5 class="btn btn-warning" style="font-size: 27px;"> بدر البلهان</h5>

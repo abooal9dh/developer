@@ -13,24 +13,33 @@
         include ('nav.php');
         include ('slider.html');
       ?>
-  <form style="background-color:rgba(0, 0, 0, 0.0);border-radius:9; enctype="multipart/form-data" method="POST" action="" class="droid-arabic-kufi mx-4 py-6 row p-4 text-warning " dir="rtl"  >
-    <div class="col-md-3">
+
+
+   <div class="row d-flex justify-content-center droid-arabic-kufi" dir="rtl">   
+        <div class="card text-center my-4 mx-4 " style="background-color:rgba(0, 0, 0, 0.0); border: solid #FFC107;">
+          <div class="card-body">
+        
+            <p class="card-text text-warning" style="font-size: 23px;">
+
+عميلنا الكريم يطيب لمكتب المحامي عبدالرحمن محمد الجمعة للمحاماة ان يضع بين يديكم النموذج التالي نأمل إكمال الفرغات فيما يخص البيانات وطلباتكم في الدعوى لدراستها وإفادتكم ،،، شكراً لاختياركم مكتب الجمعة للمحاماة،،، نسعد بخدمتكم
+
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+  <form style="background-color:rgba(0, 0, 0, 0.0);border-radius:9; " enctype="multipart/form-data" method="POST" action="" class="droid-arabic-kufi mx-4 py-6 row p-4 text-warning " dir="rtl"  >
+    <div class="col-md-6">
       <label  dir="rtl" class="form-label">الأسم </label>
       <input name="name_app" type="text" dir="rtl" class="form-control"  value="" required>
     </div>
-    <div class="col-md-3" dir="rtl" >
-      <label  dir="rtl" class="form-label">رقم الهوية </label>
-      <input name="id_app" type="number" min="111111111" max="9999999999" dir="rtl" class="form-control"  value="" required>
-    </div>
-    <div class="col-md-3" dir="rtl" >
+    <div class="col-md-6" dir="rtl" >
       <label  dir="rtl" class="form-label">رقم الجوال</label>
       <input name="ph_app" type="number" min="111111111" max="9999999999" dir="rtl" class="form-control"  value="" required>
     </div>
-    <div class="col-md-3">
-      <label  dir="rtl" class="form-label">البريد الإلكتروني </label>
-      <div class="input-group">
-        <input name="email_app" type="email"  dir="rtl" class="form-control"   aria-describedby="inputGroupPrepend2" >
-      </div>
     </div>
        <div class="col-md-12 py-1">
       <label dir="rtl" class="form-label">مختصر الدعوى</label>
@@ -41,7 +50,7 @@
       <textarea name="order_app" type="text" dir="rtl" class="form-control"  value="" required></textarea>
     </div>
       <div class="col-md-12 py-1">
-      <label dir="rtl" class="form-label">التوقيع </label>
+      <label dir="rtl" class="form-label">المرفقات</label>
       <input name="img_app" type="file" enctype="multipart/form-data" dir="rtl" class="form-control"  required>
     </div>
     <div class="col-12 py-2">
@@ -55,9 +64,9 @@
             }
   if (isset($_POST['order'])) {
             $name_app = strip_tags($_POST['name_app']);
-            $id_app = strip_tags($_POST['id_app']);
+            @$id_app = strip_tags($_POST['id_app']);
             $ph_app = strip_tags($_POST['ph_app']);
-            $email_app = strip_tags($_POST['email_app']);
+            @$email_app = strip_tags($_POST['email_app']);
             $sum_app = strip_tags($_POST['sum_app']);
             $order_app = strip_tags($_POST['order_app']);
             $ift = strtolower(pathinfo($_FILES["img_app"]["name"],PATHINFO_EXTENSION));
@@ -91,22 +100,9 @@
 <script>location.href = "/app.php#done";</script>
             ';
 
-          echo "
-
-<script>
-    var sig = $('#sig').signature({syncField: '#signature64', syncFormat: 'PNG'});
-    $('#clear').click(function(e) {
-        e.preventDefault();
-        sig.signature('clear');
-        $('#signature64').val('');
-    });
-</script>
-
-
-          ";
-            }
-
           }
+
+        }
     ?>
     <?php
 include('footer.php')
