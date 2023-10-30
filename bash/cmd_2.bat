@@ -1,3 +1,3 @@
 cls
-D:\xampp\htdocs\coodxroot
-D:\xampp\htdocs\nofakya18.com
+D:\localhost\htdocs\coodxroot
+D:\localhost\htdocs\nofakya18.com
