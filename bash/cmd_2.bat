@@ -1,3 +1,3 @@
 cls
-D:\localhost\htdocs\coodxroot
-D:\localhost\htdocs\nofakya18.com
+C:\localhost\htdocs\coodxroot
+C:\localhost\htdocs\nofakya18.com
