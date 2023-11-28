@@ -53,21 +53,29 @@ echo '<br>
         </div>
         <div class="card col-md-8  px-4 mx-2 align-items-right droid-arabic-kufi text-warning justify-content-right  align-items-rigth" style="background-color:rgba(0, 0, 0, 0.0); border: solid #FFC107;">
           <br>
-          <p class="small mb-0 " style="font-family: tahoma; font-weight: bold;" dir="ltr">
+        <!--  <p class="small mb-0 " style="font-family: tahoma; font-weight: bold;" dir="ltr">
                   <?php echo $cdta["date"]; ?>
                 </p>
                 <h6 class="  fw-bold mb-1" style="margin-top:-23px;">
-                  <?php echo $cdta["name_app"]; ?>
-                </h6>
-                <!-- <p class="  fw-bold mb-1"><?php echo $cdta["email_app"]; ?></p> -->
-                
-                <center style=" margin-top:27px;">
-                  <p class="  fw-bold col-md-4 mb-1" style="background-color:rgba(0, 0, 0, 0.0); border: solid 1px #FFC107; border-radius: 5px;" >مختصر الدعوى</p>
-                  <p class="  fw-bold mb-1"><?php echo $cdta["sum_app"]; ?></p>
-                  <p class="  fw-bold mb-1 col-md-4" style="background-color:rgba(0, 0, 0, 0.0); border: solid 1px #FFC107;border-radius: 5px;">الطلبات </p>
-                  <p class="  fw-bold mb-1"><?php echo $cdta["order_app"]; ?></p>
-                </center>
                   <p class="  fw-bold mb-1" style="padding-bottom: 15px; padding-top: 15px;">رقم الجوال : <?php echo $cdta["ph_app"]; ?></p>
+                </h6>
+                 <p class="  fw-bold mb-1"><?php echo $cdta["email_app"]; ?></p> -->
+                
+                <center style=" margin-top:27px; margin-bottom:27px;">
+                  <p class="  fw-bold mb-1"><?php echo $cdta["date"]; ?></p>
+                    <p class="  fw-bold col-md-4 mb-1" style="background-color:rgba(0, 0, 0, 0.0); border: solid 1px #FFC107; border-radius: 5px;" >رقم الجوال</p>
+                  <p class="  fw-bold mb-1"><?php echo $cdta["ph_app"]; ?></p>
+                    <p class="  fw-bold col-md-4 mb-1" style="background-color:rgba(0, 0, 0, 0.0); border: solid 1px #FFC107; border-radius: 5px;" >المدعي</p>
+                  <p class="  fw-bold mb-1"><?php echo $cdta["name_app"]; ?></p>
+                  <p class="  fw-bold col-md-4 mb-1" style="background-color:rgba(0, 0, 0, 0.0); border: solid 1px #FFC107; border-radius: 5px;" >المدعى عليه</p>
+                  <p class="  fw-bold mb-1"><?php echo $cdta["name2_app"]; ?></p>
+                  <p class="  fw-bold mb-1 col-md-4" style="background-color:rgba(0, 0, 0, 0.0); border: solid 1px #FFC107;border-radius: 5px;">نوع الدعوى </p>
+                  <p class="  fw-bold mb-1"><?php echo $cdta["order_app"]; ?></p>
+                  <p class="  fw-bold col-md-4 mb-1" style="background-color:rgba(0, 0, 0, 0.0); border: solid 1px #FFC107; border-radius: 5px;" >موجز الدعوى</p>
+                  <p class="  fw-bold mb-1"><?php echo $cdta["sum_app"]; ?></p>
+                  <a href='https://api.whatsapp.com/send/?phone=966<?php echo $cdta["ph_app"]; ?>'><img src="/img/layer_3.png" height="54px"></a>
+                </center>
+                  
                   <!-- <p class="  fw-bold mb-1">رقم الهوية : <?php echo $cdta["id_app"]; ?></p> -->
               </div>  
 

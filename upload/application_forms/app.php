@@ -32,22 +32,39 @@
 
 
   <form style="background-color:rgba(0, 0, 0, 0.0);border-radius:9; " enctype="multipart/form-data" method="POST" action="" class="droid-arabic-kufi mx-4 py-6 row p-4 text-warning " dir="rtl"  >
-    <div class="col-md-6">
-      <label  dir="rtl" class="form-label">الأسم </label>
+    <div class="col-md-4">
+      <label  dir="rtl" class="form-label">المدعي</label>
       <input name="name_app" type="text" dir="rtl" class="form-control"  value="" required>
     </div>
-    <div class="col-md-6" dir="rtl" >
+    <div class="col-md-4">
+      <label  dir="rtl" class="form-label">المدعى عليه</label>
+      <input name="name2_app" type="text" dir="rtl" class="form-control"  value="" required>
+    </div>
+    <div class="col-md-4" dir="rtl" >
       <label  dir="rtl" class="form-label">رقم الجوال</label>
       <input name="ph_app" type="number" min="111111111" max="9999999999" dir="rtl" class="form-control"  value="" required>
     </div>
+    <div class="col-md-12 py-1">
+      <br>
+      <label dir="rtl" class="form-label">نوع الدعوى</label>
+  <select name="order_app" id="order_app" required>
+    <option value="القضايا التجارية">القضايا التجارية</option>
+    <option value="القضايا الإدارية">القضايا الإدارية</option>
+    <option value="المحاكم العامة">المحاكم العامة</option>
+    <option value="المنازعات التأمينية">المنازعات التأمينية</option>
+    <option value="إدارة الصناديق والعقارات">إدارة الصناديق والعقارات</option>
+    <option value="الشركات العائلية">الشركات العائلية</option>
+    <option value="النزاعات العائلية">النزاعات العائلية</option>
+    <option value="الاستثمارات الخاصة">الاستثمارات الخاصة</option>
+    <option value="المعاملات التي تختص بالعقارات السكنية">المعاملات التي تختص بالعقارات السكنية</option>
+    <option value="الجمعيات الخيرية العائلية والتبرعات الخيرية">الجمعيات الخيرية العائلية والتبرعات الخيرية</option>
+    <option value="اخرى">اخرى</option>
+  </select>
+    </div>
     </div>
        <div class="col-md-12 py-1">
-      <label dir="rtl" class="form-label">مختصر الدعوى</label>
+      <label dir="rtl" class="form-label">تفصيل الدعوى بشكل موجز</label>
    <textarea name="sum_app" type="text" dir="rtl" class="form-control"  value="" required></textarea>
-    </div>
-    <div class="col-md-12 py-1">
-      <label dir="rtl" class="form-label">الطلبات</label>
-      <textarea name="order_app" type="text" dir="rtl" class="form-control"  value="" required></textarea>
     </div>
       <div class="col-md-12 py-1">
       <label dir="rtl" class="form-label">المرفقات</label>
@@ -64,6 +81,7 @@
             }
   if (isset($_POST['order'])) {
             $name_app = strip_tags($_POST['name_app']);
+            $name2_app = strip_tags($_POST['name2_app']);
             @$id_app = strip_tags($_POST['id_app']);
             $ph_app = strip_tags($_POST['ph_app']);
             @$email_app = strip_tags($_POST['email_app']);
@@ -89,12 +107,12 @@
               move_uploaded_file($_FILES["img_app"]["tmp_name"], 'signature/'.$newfilename);
               $img_ap = @$newfilename;
               $img_app = "signature/".$img_ap;
-              $iims=$msc->prepare("INSERT INTO `app_tab` (`name_app`, `id_app`, `ph_app`, `email_app`, `sum_app`, `order_app`, `img_app`) VALUES ('$name_app', '$id_app', '$ph_app', '$email_app', '$sum_app', '$order_app', '$img_app') ");
+              $iims=$msc->prepare("INSERT INTO `app_tab` (`name_app`,`name2_app`, `id_app`, `ph_app`, `email_app`, `sum_app`, `order_app`, `img_app`) VALUES ('$name_app','$name2_app', '$id_app', '$ph_app', '$email_app', '$sum_app', '$order_app', '$img_app') ");
               $iims -> execute();
             echo '
 <center>
 <div class="col-md-5 mx-3 text-center px-3  alert alert-success droid-arabic-kufi " role="alert" id="done">
-تم تقديم طلبك بنجاح في إنتظار ان تتم مراجعتة و التواصل معك .. شكرا
+تم تقديم طلبك بنجاح في إنتظار ان تتم مراجعتة و سيتم التواصل معك عن طريق الواتساب في اقرب فرصه .. وشكرا
 </div>
 </center>
 <script>location.href = "/app.php#done";</script>
