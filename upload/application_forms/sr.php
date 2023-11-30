@@ -170,8 +170,8 @@
             <h5 class="btn btn-warning" style="font-size: 27px;">المحاكم العامة</h5>
             <h5 class="btn btn-warning" style="font-size: 27px;">المنازعات التأمينية</h5>
             <h5 class="btn btn-warning" style="font-size: 27px;">إدارة الصناديق والعقارات</h5>
-            <h5 class="btn btn-warning" style="font-size: 27px;">الشركات العائلية</h5>
-            <h5 class="btn btn-warning" style="font-size: 27px;">النزاعات العائلية</h5>
+            <h5 class="btn btn-warning" style="font-size: 27px;">المحاكم العمالية</h5>
+            <h5 class="btn btn-warning" style="font-size: 27px;">قسمة التركات</h5>
             <h5 class="btn btn-warning" style="font-size: 27px;">الاستثمارات الخاصة</h5>
             <h5 class="btn btn-warning" style="font-size: 27px;">المعاملات التي تختص بالعقارات السكنية</h5>
             <h5 class="btn btn-warning" style="font-size: 27px;">الجمعيات الخيرية العائلية والتبرعات الخيرية</h5>
