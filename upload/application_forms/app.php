@@ -21,8 +21,7 @@
         
             <p class="card-text text-warning" style="font-size: 23px;">
 
-عميلنا الكريم يطيب لمكتب المحامي عبدالرحمن محمد الجمعة للمحاماة ان يضع بين يديكم النموذج التالي نأمل إكمال الفرغات فيما يخص البيانات وطلباتكم في الدعوى لدراستها وإفادتكم ،،، شكراً لاختياركم مكتب الجمعة للمحاماة،،، نسعد بخدمتكم
-
+السلام عليكم ورحمة الله وبركاته ،، لخدمتك ودراسة مالديك ؛ فضلا قم بتعبئة المرفق ، وفقك ربي ورعاك
 
 
             </p>
@@ -48,16 +47,12 @@
       <br>
       <label dir="rtl" class="form-label">نوع الدعوى</label>
   <select name="order_app" id="order_app" required>
-    <option value="القضايا التجارية">القضايا التجارية</option>
-    <option value="القضايا الإدارية">القضايا الإدارية</option>
-    <option value="المحاكم العامة">المحاكم العامة</option>
-    <option value="المنازعات التأمينية">المنازعات التأمينية</option>
-    <option value="إدارة الصناديق والعقارات">إدارة الصناديق والعقارات</option>
-    <option value="المحاكم العمالية">المحاكم العمالية</option>
-    <option value="قسمة التركات">قسمة التركات</option>
-    <option value="الاستثمارات الخاصة">الاستثمارات الخاصة</option>
-    <option value="المعاملات التي تختص بالعقارات السكنية">المعاملات التي تختص بالعقارات السكنية</option>
-    <option value="الجمعيات الخيرية العائلية والتبرعات الخيرية">الجمعيات الخيرية العائلية والتبرعات الخيرية</option>
+    <option value="التوثيق">التوثيق</option>
+    <option value="التحكيم">التحكيم</option>
+    <option value="الوصايا والأوقاف ">الوصايا والأوقاف </option>
+    <option value="الصلح">الصلح</option>
+    <option value="صياغة العقود">صياغة العقود</option>
+    <option value="تأسيس الشركات">تأسيس الشركات</option>
     <option value="اخرى">اخرى</option>
   </select>
     </div>
@@ -68,7 +63,7 @@
     </div>
       <div class="col-md-12 py-1">
       <label dir="rtl" class="form-label">المرفقات</label>
-      <input name="img_app" type="file" enctype="multipart/form-data" dir="rtl" class="form-control"  required>
+      <input name="img_app" type="file" enctype="multipart/form-data" dir="rtl" class="form-control"  >
     </div>
     <div class="col-12 py-2">
       <button class="btn btn-warning" type="submit" name="order">ارسال الطلب</button>
@@ -88,7 +83,7 @@
             $sum_app = strip_tags($_POST['sum_app']);
             $order_app = strip_tags($_POST['order_app']);
             $ift = strtolower(pathinfo($_FILES["img_app"]["name"],PATHINFO_EXTENSION));
-            if($ift != "jpg" && $ift != "png" && $ift != "jpeg"
+            if($ift != NULL && $ift != "jpg" && $ift != "png" && $ift != "jpeg"
               && $ift != "gif" && $ift != "pdf") {
                 
               echo '

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 28, 2023 at 03:44 PM
+-- Generation Time: Nov 30, 2023 at 04:29 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -37,7 +37,7 @@ CREATE TABLE `app_tab` (
   `email_app` varchar(270) NOT NULL,
   `order_app` varchar(1080) NOT NULL,
   `sum_app` varchar(1080) NOT NULL,
-  `img_app` varchar(270) NOT NULL
+  `img_app` varchar(270) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
