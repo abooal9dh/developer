@@ -47,6 +47,12 @@
       <br>
       <label dir="rtl" class="form-label">نوع الدعوى</label>
   <select name="order_app" id="order_app" required>
+    <option value="القضايا التجاريه">القضايا التجاريه</option>
+    <option value="القضايا الإدارية">القضايا الإدارية</option>
+    <option value="المحاكم العامة">المحاكم العامة</option>
+    <option value="المنازعات التامينية" >المنازعات التامينية</option>
+    <option value="المحاكم العمالية">المحاكم العمالية</option>
+    <option value="قسمة التركات">قسمة التركات</option>
     <option value="التوثيق">التوثيق</option>
     <option value="التحكيم">التحكيم</option>
     <option value="الوصايا والأوقاف ">الوصايا والأوقاف </option>
