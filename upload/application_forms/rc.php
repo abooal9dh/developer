@@ -45,19 +45,7 @@
         </div>
       </div>
 
-      <div class="row d-flex justify-content-center" dir="rtl">   
-        <div class="card text-center mx-4 " style="background-color:rgba(0, 0, 0, 0.0); border: solid #FFC107;">
-          <div class="card-body">
-            <h5 class="btn btn-warning" style="font-size: 27px;">خبرة قانونية </h5>
-            <p class="card-text text-warning" style="font-size: 23px;">
 
-      نحن في مكتب الجمعة للمحاماة والاستشارات القانونية نمتهن القانون ليس كمهنة فقط ولكن كأسلوب حياة وعمل، لنتمرس في تغطية كافة الأعمال القانونية، بمعايير عالية في مجالات مختلفة منها التقاضي والترافع وصياغة العقود وتأسيس الشركات والدراسات القانونية وتسوية النزاعات وخدمات رواد الأعمال.
-
-
-            </p>
-          </div>
-        </div>
-      </div>
 
       <div class="row d-flex justify-content-center" dir="rtl">   
         <div class="card text-center my-4 mx-4 " style="background-color:rgba(0, 0, 0, 0.0); border: solid #FFC107;">
