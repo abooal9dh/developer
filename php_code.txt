@@ -1,3 +1,12 @@
+========= select random file from folder in server =========
+	$dir = 'upload';
+    $files = glob($dir . '/*.png');
+    $file = array_rand($files);
+    $target = $files[$file];
+
+  show taget [  dd($target ); ]
+=================================================================================    
+
 ============== delete & replace with =============
 $trimmed = str_replace($search or 'string', 'replace with', $variable) ;
 
