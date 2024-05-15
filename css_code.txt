@@ -2,7 +2,7 @@
 
 Image sprites 
 
-
+    
 
 <!DOCTYPE html>
 <html>
