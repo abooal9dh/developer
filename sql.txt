@@ -1,0 +1,2 @@
+SET time_zone = '+02:00'; KHARTOUM
+SET time_zone = '+03:00'; SAUDI ARABIA
