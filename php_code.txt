@@ -1,3 +1,6 @@
+========= DATE =========
+echo date(Y);
+=====================================
 ========= number hindi =========
 function convert2english($string) {
     $newNumbers = range(0, 9);
