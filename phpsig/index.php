@@ -17,19 +17,19 @@
     </style>
   
 </head>
-<body class="bg-dark">
-<div class="container">
-   <div class="row">
-       <div class="col-md-6 offset-md-3 mt-5" dir="rtl">
-           <div class="card">
-               <div class="card-header text-center">
+<body >
+<div>
+   <div >
+       <div  dir="rtl">
+           <div >
+               <div >
                    <h5>مكتب الزواج  </h5>
                </div>
-               <div class="card-body" >
+               <div>
             
                     <form method="POST" action="upload.php" enctype="multipart/form-data">
                     
-                        <div class="col-md-12 text-center" >
+                        <div>
                             <label class="" for="">التوقيع:</label>
                             <br/>
                             <div id="sig" ></div>
@@ -38,7 +38,7 @@
                             <textarea id="signature64" name="signed" style="display: none"></textarea>
                         </div>
                         <br/>
-                        <button class="btn btn-success">حفظ</button>
+                        <button >حفظ</button>
                         
                     </form>
                </div>
